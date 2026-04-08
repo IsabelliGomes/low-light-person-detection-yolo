@@ -42,16 +42,79 @@ The approach consists of:
 └── README.md
 ```
 
+## 📂 Code Structure
 
-## ⚙️ Setup
+* `generate_datasets.py` → Creates datasets with different lighting conditions
+* `augment_datasets.py` → Applies data augmentation techniques
+* `generate_script_video.py` → Runs YOLOv5 detection on videos
+* `generate_comparison_graphs.py` → Generates confidence comparison plots
 
-Clone YOLOv5 and install dependencies:
+## 📊 Dataset
+
+The dataset includes multiple variations with different lighting conditions:
+
+* Original datasets
+* Augmented datasets
+* Low-light simulated datasets
+
+Annotations follow the YOLO format:
+
+```
+<class_id> <x_center> <y_center> <width> <height>
+```
+
+Videos used for evaluation are available in the `video/` folder.
+
+
+## 🚀 How to Run
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/IsabelliGomes/low-light-person-detection-yolo
+cd low-light-person-detection-yolo
+```
+
+### 2. Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 3. Clone YOLOv5 (Ultralytics)
 
 ```bash
 git clone https://github.com/ultralytics/yolov5
 cd yolov5
 pip install -r requirements.txt
 ```
+
+### 4. Run the pipeline
+
+#### Generate datasets
+
+```bash
+python code/generate_datasets.py
+```
+
+#### Apply augmentations
+
+```bash
+python code/augment_datasets.py
+```
+
+#### Run detection on videos
+
+```bash
+python code/generate_script_video.py
+```
+
+#### Generate comparison graphs
+
+```bash
+python code/generate_comparison_graphs.py
+```
+
 
 ## 🚀 Training
 
@@ -62,7 +125,7 @@ python train.py --img 640 --batch 16 --epochs 50 --data dataset/dataset.yaml --w
 ## 🔍 Inference
 
 ```bash
-python detect.py --weights best.pt --img 640 --source videos/
+python detect.py --weights best.pt --img 640 --source video/
 ```
 
 ## 📊 Results
