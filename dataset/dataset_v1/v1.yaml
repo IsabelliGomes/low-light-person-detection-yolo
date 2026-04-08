@@ -1,0 +1,5 @@
+train: .\dataset_v1\images\train
+val:   .\dataset_v1\images\val
+
+nc: 1
+names: ['person']

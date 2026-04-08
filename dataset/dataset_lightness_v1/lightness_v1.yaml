@@ -1,0 +1,5 @@
+train: ._v1\images\train
+val:   ._v1\images\val
+
+nc: 1
+names: ['person']

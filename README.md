@@ -30,19 +30,18 @@ The approach consists of:
 3. Running inference on processed videos
 4. Comparing confidence scores across frames
 
+
 ## 📂 Project Structure
 
 ```
 .
 ├── code/           # Training, inference, and analysis scripts
 ├── dataset/        # Images and labels in YOLO format
-├── videos/         # Raw and processed videos
-├── results/        # Predictions and generated graphs
+├── video/          # Raw and processed videos
 ├── requirements.txt
 └── README.md
 ```
 
----
 
 ## ⚙️ Setup
 
