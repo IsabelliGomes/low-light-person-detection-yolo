@@ -1,4 +1,20 @@
-# Low-Light Person Detection using YOLOv5
+# Person Detection in Low-Light Environments: Evaluation of an Annotation-Free Approach
+Manuscript ID: IEEE LATAM Submission ID 10779 
+Authors:
+* Isabelli Pinto Gomes
+* Flávio Luis de Mello
+
+Affiliation:
+
+Machine Intelligence and Computing Models Laboratory (IM2C/DEL/Poli/UFRJ)
+
+Eletronics and Computer Engineering Department
+
+Polytechnic School
+
+Federal University of Rio de Janeiro
+
+Brazil
 
 ## 📌 Overview
 
